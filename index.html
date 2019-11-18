@@ -8,11 +8,17 @@
 </head>
 <body>
   <h1>Todo List</h1>
+  <input id="clickMe" type="button" value="Enter Todo-list" onclick="start();" />
   <ul>
-    <li>"new" - Add a Todo</li>
-    <li>"list" - List all Todo's</li>
-    <li>"delete" - Delete a Todo</li>
-    <li>"quit" - Quit App</li>
+    <li>
+      <button id="clickme" onclick="addTodos()">Add new Todo</button>
+    </li>
+    <li>
+      <button id='clickme' onclick="listTodos()">View Todo List</button>
+    </li>
+    <li>
+        <button id='clickme' onclick="deleteTodos()">Remove Todo</button>
+    </li>
   </ul>
   
   <script type="text/javascript" src="list.js"></script>

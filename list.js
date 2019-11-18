@@ -1,20 +1,22 @@
 var todos = ['buy new turtle' ]
 
-var input = prompt("What do you want to do?")
 
 
+function start(){
+  var input = prompt("What do you want to do?")
 
-while(input !== "quit"){
-  //handle input
-    if(input === 'list'){
-        listTodos();
-    } else if(input === "new"){
-      addTodos();
-    } else if (input === "delete"){
-      deleteTodos()
-    }
-   // ask for new input
-  input = prompt("What do you want to do?")
+  // while(input !== "quit"){
+  //   //handle input
+      if(input === 'list'){
+          listTodos();
+      } else if(input === "new"){
+        addTodos();
+      } else if (input === "delete"){
+        deleteTodos()
+      }
+     // ask for new input
+    // input = prompt("What do you want to do?")
+  
 }
 
 function listTodos(){
@@ -39,6 +41,7 @@ function deleteTodos(){
   //splice
   todos.splice(index, 1)
   console.log("Deleted Todo")
+  listTodos()
 }
 
 console.log("ok you quit the app")
